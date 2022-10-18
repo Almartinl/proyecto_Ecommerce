@@ -1,0 +1,54 @@
+section.card {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 16px;
+    box-shadow: 0 8px 16px var(--griss2);
+    
+}
+
+section.card img.articulos-img{
+    max-width: 45vw;
+    margin: 0 48px;
+}
+
+.titulo-articulo {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    margin: 0 48px;
+}
+
+.grupo-precio{
+    margin-bottom: 16px;
+}
+
+
+.add-carrito {
+    display: flex;
+    align-content: center;
+    flex-direction: row;
+    justify-content: center;
+    align-items: stretch;
+}
+
+.add-carrito input{
+    padding: 18px;
+    border-radius: 16px 0 0 16px;
+    border: none;
+    background-color: var(--griss1);
+}
+
+.add-carrito a{
+    margin: 0;
+    border-radius: 0 16px 16px 0;
+    text-align: center;
+    padding: 18px;
+    background-color: var(--primario-claro);
+    color: var(--blanco);
+}
+
+.garantia{
+    margin-top: 24px;
+}

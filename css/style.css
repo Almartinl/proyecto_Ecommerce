@@ -1,0 +1,346 @@
+:root{
+    /*colores*/
+    --primario: hsl(224, 69%, 49%);
+    --primario-claro: hsl(197, 69%, 57%);
+    --primario-oscuro: hsl(224, 69%, 35%);
+    --secundario: hsl(83, 69%, 49%);
+    --secundario-claro: hsl(83, 69%, 57%);
+    --secundario-oscuro: hsl(83, 69%, 35%);
+    --griss1: hsl(234, 3%, 98%);
+    --griss2: hsl(234, 3%, 85%);
+    --griss3: hsl(234, 3%, 70%);
+    --griss4: hsl(234, 3%, 60%);
+    --negro: black;
+    --blanco: white;
+    --exito: hsl(127, 69%, 49%);
+    --error: hsl(357, 69%, 49%);
+    /*tamaños de texto*/
+    --texto-base: 16px;
+    --h1: 48.43px;
+    --h2: 39.06px;
+    /*espacios*/
+    --s: 8px;
+    --m: 16px;
+    --l: 24px;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+img{
+    vertical-align: initial;
+}
+
+h1{ display: inline;}
+
+h1,h2,h3,h4,h5,h6{
+    font-family: "Mulish", serif;
+    color:darkslategrey;
+    font-weight: bold;
+}
+
+h1{font-size: 48.43px;}
+h2{font-size: 39.06px;}
+h3{font-size: 31.25px;}
+h4{font-size: 25.00px;}
+h5,.lead{font-size: 20.00px;}
+h6,body{font-size: 16px;}
+small{font-size: 12.80px;}
+
+.wrap{
+    max-width: 1432px;
+    margin: 0 auto;
+}
+
+header .header-inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 8px;
+    margin-top: 24px;
+}
+
+.logo h1{
+    margin-left: 12px;
+}
+
+.buscar input{
+    display: inline-block;
+    padding: 18px;
+    width: 85vh;
+    max-width: 100%;
+    border-radius: 16px;
+    border: none;
+    background-color: var(--griss1); 
+
+}
+
+.buscar input:hover{
+    border: 2px solid var(--primario-claro);
+}
+
+a{
+    text-decoration: none;
+}
+
+.carrito a{
+    display: inline-block;
+    position: relative;
+    padding: 18px 24px;
+    border-radius: 16px;
+    margin: 18px;
+    background-color: var(--griss1);
+    color:var(--negro);
+    transition: all 0.3s;
+}
+
+.carrito a:hover{
+    background-color: var(--secundario);
+    color: var(--primario);
+}
+
+
+.contador {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    top: -16px;
+    right: -16px;
+    width: 32px;
+    height: 32px;
+    background: var(--primario-claro);
+    border-radius: 50%;
+    color: var(--blanco);
+    
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 16px;
+    padding-inline-start: 0;
+}
+
+.menu li{
+    display: inline;
+}
+
+.btn-nav{
+    background-color: var(--blanco);
+    color: var(--negro);
+    padding-left: 0;
+    padding-right: 32px;
+    transition: all 0.3s;
+
+}
+
+.btn-nav:hover{
+    text-decoration: 2px underline var(--primario-claro);
+}
+
+.botones{
+    display: inline-block;
+    padding: 8px 24px;
+    border-radius: 16px;
+    margin: 4px;
+    background-color: var(--griss1);
+    color: var(--negro);
+}
+
+.botones:hover{
+    background-color: var(--secundario);
+    color: var(--primario);
+}
+
+.botones-especiales{
+    display: inline-block;
+    padding: 8px 24px;
+    border-radius: 16px;
+    margin: 24px auto;
+    background-color: var(--primario-claro);
+    color: white;
+}
+
+.botones-especiales:hover{
+    background-color: var(--primario);
+    color: var(--secundario);
+}
+
+body{
+    font-family: "Roboto", sans-serif;
+    font-size: 16px;
+    color: var(--negro);
+    background-color: var(--blanco);
+}
+
+
+
+
+
+.servicios {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    align-content: center;
+}
+
+.serv-box {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    gap: 16px;
+}
+
+.text-serv {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.text-serv span{
+    font-weight: bold;
+}
+
+footer {
+    background-image: url(/imagenes/cesped1.jpg);
+    background-size: cover;
+    color: var(--blanco);
+    padding: 80px 0px;
+    position: relative;
+}
+
+.inicio{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    bottom: 16px;
+    right: 16px;
+    width: 64px;
+    height: 64px;
+    background-color: var(--secundario);
+    border-radius: 50%;
+    color: var(--blanco);
+    background-image: url(/imagenes/pelota\ padel.png);
+    background-position: center;
+    background-size: 64px;
+    
+}
+
+.inicio span{
+    font-size: 80px;
+    margin-top: 24px;
+}
+
+.menu-footer {
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: flex-start;
+    flex-direction: row;
+}
+
+.footer-all {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    align-content: center;
+}
+
+.newsletter {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    width: 40%;
+}
+
+.news {
+    display: flex;
+    margin-bottom: 48px;
+    flex-direction: column;
+    align-content: center;
+    align-items: stretch;
+}
+
+.news h3{
+    margin-top: 24px;
+    text-align: center;
+    color: var(--blanco);
+}
+
+.input-news {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    flex-direction: row;
+    margin-top: 64px;
+}
+
+.news form input[type="email"] {
+
+    padding: 18px;
+    width: 100%;
+    border-radius: 16px 0 0 16px;
+    border: none;
+    background-color: var(--griss1);
+}
+
+.botones.btn-sub{
+    margin: 0;
+    border-radius: 0 16px 16px 0;
+    text-align: center;
+    padding: 18px;
+    background-color: var(--griss2);
+
+    
+}
+
+.chk-pol {
+    margin-top: 16px;
+}
+
+
+.footer-all-menu {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: baseline;
+    max-width: 45%;
+    margin-bottom: 128px;
+}
+
+footer a{
+    color: var(--blanco);
+}
+
+footer .menu-footer a:hover{
+    color: chartreuse;
+}
+
+.logo-footer{
+    margin-bottom: 64px;
+    font-size: var(--h1);
+    color: var(--blanco)
+}
+
+.redes *{
+    color: var(--blanco);
+}
+
+
+
+/*.carrito .text-carrito{
+    color:rgb(255, 255, 255)
+}*/
+
+
+
+

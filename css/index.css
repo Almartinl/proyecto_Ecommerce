@@ -1,0 +1,58 @@
+
+.nav2{
+    display: none;
+}
+
+.formulario {
+    display: flex;
+    margin: auto;
+    max-width: 100%;
+}
+
+.register {
+    padding: 16px;
+    border: 2px solid var(--primario-claro);
+    border-radius: 16px;
+}
+
+.nombre {
+    float: left;
+    width: 48%;
+}
+
+.apellido {
+    float: right;
+    width: 48%;
+}
+
+.formulario form input{
+    padding: 18px;
+    width: 100%;
+    border-radius: 16px;
+    border: none;
+    background-color: var(--griss1); 
+    margin-top: 8px;
+
+}
+
+form a.botones-especiales {
+    width: 100%;
+    text-align: center;
+    transition: all 0.3s;
+}
+
+form a.botones-especiales:hover{
+    background-color: var(--primario);
+    color: var(--secundario);
+}
+
+main.wrap{
+    display: flex;
+    align-items: center;
+    align-content: center;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 48px;
+    margin-bottom: 48px;
+
+}

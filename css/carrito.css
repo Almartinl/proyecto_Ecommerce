@@ -1,0 +1,8 @@
+.pedido{
+    display: inline-block;
+    border: 1px solid blue;
+    padding: 48px 32px;
+    margin: 24px;
+    border-radius: 16px;
+
+}
