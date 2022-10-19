@@ -186,6 +186,7 @@ body{
     align-items: center;
     justify-content: space-between;
     align-content: center;
+    margin-top: 64px;
 }
 
 .serv-box {
