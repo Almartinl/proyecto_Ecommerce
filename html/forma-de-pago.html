@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Forma de pago</title>
     <link rel="stylesheet" href="/css/normalize.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Roboto" rel="stylesheet">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Mulish">
@@ -13,12 +14,21 @@
     <link rel="stylesheet" href="/css/forma-de-pago.css">
 </head>
 <body>
-    <header>
-        <a href="/html/index.html"><img src="/imagenes/dfsk-fav-icon.png" alt="MY STORE" width="50px"/></a>
-        <a href="/html/carrito.html"><button type="button">🛒 Carrito</button></a>
-        <a href="/html/forma-de-pago.html"><button type="button">💳 Forma de pago</button></a>
-        <a href="/html/finalizar-compra.html"><button type="button">🏦 Finalizar pago</button></a>
-    </header>
+  <header>
+    <div class="wrap header-inner">
+      <div class="logo">
+        <a href="/html/index.html"><img src="/imagenes/LogoPadel.png" alt="MY STORE" width="80px"/></a>
+        <h1>Flash Padel</h1>
+      </div>
+      <div class="proceso-de-pago">
+        <span class="botones inactivo">🛒 Carrito</span>
+        <i class="bi bi-arrow-right-circle"></i>
+        <span class="botones activo">💳 Forma de pago</span>
+        <i class="bi bi-arrow-right-circle"></i>
+        <span class="botones inactivo">🏦 Finalizar pago</span>
+      </div>
+    </div>
+  </header>
     <hr>
     <main>
         <section>

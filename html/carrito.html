@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Carrito</title>
     <link rel="stylesheet" href="/css/normalize.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Roboto" rel="stylesheet">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Mulish">
@@ -14,51 +15,64 @@
 </head>
 <body>
     <header>
-        <a href="/html/index.html"><img src="/imagenes/dfsk-fav-icon.png" alt="MY STORE" width="50px"/></a>
-        <h1>Deportes Mundial</h1>
-        <a href="/html/carrito.html"><button type="button">🛒 Carrito</button></a>
-        <a href="/html/forma-de-pago.html"><button type="button">💳 Forma de pago</button></a>
-        <a href="/html/finalizar-compra.html"><button type="button">🏦 Finalizar pago</button></a>
+      <div class="wrap header-inner">
+        <div class="logo">
+          <a href="/html/index.html"><img src="/imagenes/LogoPadel.png" alt="MY STORE" width="80px"/></a>
+          <h1>Flash Padel</h1>
+        </div>
+        <div class="proceso-de-pago">
+          <span class="botones activo">🛒 Carrito</span>
+          <i class="bi bi-arrow-right-circle"></i>
+          <span class="botones inactivo">💳 Forma de pago</span>
+          <i class="bi bi-arrow-right-circle"></i>
+          <span class="botones inactivo">🏦 Finalizar pago</span>
+        </div>
+      </div>
     </header>
-      <hr>
-      <main>
+      <main class="wrap">
         <section>
-            <div>
-                <h1>Mi carrito</h1>
-                <a href="/html/productos.html"><button type="button">Seguir comprando</button></a>
-            </div>
-            <br><br>
-            <div>
-            <article>
-                <img src="/imagenes/camiseta-adidas-espana.webp" alt="camiseta" width="80px">
-                <span>
-                    CAMISETA PRIMERA EQUIPACIÓN ESPAÑA    
-                </span>
-                <span> 69.99€</span>
+          <div class="mi-carrito">
+              <h2>Mi carrito</h2>
+                <a href="/html/productos.html" class="botones">Seguir comprando</a>
+          </div>
+          <div class="pedido">
+            <div class="articulos">
+            <article class="articulo">
+                <img src="/imagenes/adidas metalbone 3.1.jpg" alt="pala adidas" width="80px">
+                <div class="titulo-articulo">
+                  <span>
+                    ADIDAS METALBONE 3.1   
+                  </span>
+                  <span> 261,00€</span>
+                </div>
                 <input type="number" min="1" name="cantidad" id="cantidad" placeholder="Cantidad">
-                <button type="button">🗑️</button>
+                <button type="button" class="botones-especiales">🗑️</button>
             </article>
-            <article>
-                <img src="/imagenes/segunda-equipacion.webp" alt="camiseta" width="80px">
-                <span>
-                    CAMISETA SEGUNDA EQUIPACIÓN ESPAÑA    
-                </span>
-                <span> 69.99€</span>
+            <article class="articulo">
+                <img src="/imagenes/BABOLAT AIR VERON.jpg" alt="pala babolat" width="80px">
+                <div class="titulo-articulo">
+                  <span>
+                    BABOLAT AIR VERON   
+                  </span>
+                  <span> 158,35€</span>
+                </div>
                 <input type="number" min="1" name="cantidad" id="cantidad" placeholder="Cantidad">
-                <button type="button">🗑️</button>
+                <button type="button" class="botones-especiales">🗑️</button>
             </article>
-            <article>
-                <img src="/imagenes/tercera.webp" alt="camiseta" width="80px">
-                <span>
-                    CAMISETA TERCERA EQUIPACIÓN ESPAÑA    
-                </span>
-                <span> 69.99€</span>
+            <article class="articulo">
+                <img src="/imagenes/BULLPADEL HACK 03 SPO.jpg" alt="pala BULLPADEL" width="80px">
+                <div class="titulo-articulo">
+                  <span>
+                    BULLPADEL HACK 03 SPO   
+                  </span>
+                  <span> 349,95€</span>
+                </div>
                 <input type="number" min="1" name="cantidad" id="cantidad" placeholder="Cantidad">
-                <button type="button">🗑️</button>
+                <button type="button" class="botones-especiales">🗑️</button>
             </article>
             </div>
             <br>
-            <div class="pedido">
+            <div class="resumen-pedido">
                     <h3>Resumen del pedido</h3>
                     <p>
                         continua con el proceso de compra asociando tu coinbase wallet o pagar con tu tarjeta
@@ -66,6 +80,7 @@
                     <p>209.97€</p>
                     <a href="/html/forma-de-pago.html"><button type="button">Proceder con el pago</button></a>
             </div>
+          </div>
         </section>
       </main>
       <div class="wrap">

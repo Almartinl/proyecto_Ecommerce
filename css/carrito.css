@@ -1,4 +1,64 @@
-.pedido{
+.activo {
+    background-color: var(--blanco);
+    color: var(--secundario);
+    border: 1px solid var(--secundario);
+    box-shadow: 0px 0px 4px 1px;
+}
+.activo:hover{
+    background-color: var(--blanco);
+    color: var(--secundario);
+}
+
+.inactivo:hover{
+    background-color: var(--griss1);
+    color: var(--negro);
+}
+
+.mi-carrito {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.pedido {
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    align-items: center;
+}
+
+.articulos{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.articulo {
+    display: flex;
+    gap: 48px;
+    align-content: space-between;
+    flex-direction: row;
+    align-items: center;
+    width: 50vw;
+    justify-content: space-around;
+}
+.titulo-articulo {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+    width: 15vw;
+}
+
+.articulo input{
+    padding: 18px;
+    border-radius: 16px;
+    border: none;
+    background-color: var(--griss1);
+}
+
+
+.resumen-pedido{
     display: inline-block;
     border: 1px solid blue;
     padding: 48px 32px;

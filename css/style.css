@@ -48,6 +48,10 @@ h5,.lead{font-size: 20.00px;}
 h6,body{font-size: 16px;}
 small{font-size: 12.80px;}
 
+button{
+    border: none;
+}
+
 .wrap{
     max-width: 1432px;
     margin: 0 auto;
@@ -59,6 +63,12 @@ header .header-inner {
     justify-content: space-between;
     gap: 8px;
     margin-top: 24px;
+}
+
+.proceso-de-pago{
+    display: flex;
+    align-items: center;
+    gap: 40px;
 }
 
 .logo h1{
@@ -152,8 +162,8 @@ a{
 }
 
 .botones:hover{
-    background-color: var(--secundario);
-    color: var(--primario);
+    background-color: var(--primario-claro);
+    color: var(--blanco);
 }
 
 .botones-especiales{
